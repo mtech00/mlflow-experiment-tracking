@@ -1,0 +1,15 @@
+artifact_uri: /artifacts/584969361315763526/ca5bcc85afcf43878d59435f171847f7/artifacts
+end_time: 1744284758927
+entry_point_name: ''
+experiment_id: '584969361315763526'
+lifecycle_stage: active
+run_id: ca5bcc85afcf43878d59435f171847f7
+run_name: random_forest_basic
+run_uuid: ca5bcc85afcf43878d59435f171847f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744284758364
+status: 3
+tags: []
+user_id: root

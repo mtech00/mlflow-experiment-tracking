@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744284764534
+current_stage: None
+description: ''
+last_updated_timestamp: 1744284764534
+name: iris_classification_best_model
+run_id: a8c9dd7fe42f4e99ab1413c065b12b09
+run_link: ''
+source: /artifacts/584969361315763526/a8c9dd7fe42f4e99ab1413c065b12b09/artifacts/model
+status: READY
+status_message: null
+storage_location: /artifacts/584969361315763526/a8c9dd7fe42f4e99ab1413c065b12b09/artifacts/model
+user_id: null
+version: 1

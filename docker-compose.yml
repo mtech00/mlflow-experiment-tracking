@@ -1,0 +1,41 @@
+
+services:
+  # MLFlow server container
+  mlflow-server:
+    image: python:3.9-slim
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+      - ./artifacts:/artifacts
+    environment:
+      - MLFLOW_TRACKING_URI=http://localhost:5000
+      # For the demonstration, it uses the local file system as the backend.
+    command: >
+      bash -c "apt-get update && apt-get install -y gcc python3-dev && pip install mlflow==2.8.0 && mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri file:///mlruns --default-artifact-root /artifacts"
+    networks:
+      - ml-network
+
+  # Model container
+  model-service:
+    image: python:3.9-slim
+    depends_on:
+      - mlflow-server
+    volumes:
+      - ./:/app
+      - ./mlruns:/mlruns
+      - ./artifacts:/artifacts
+    working_dir: /app
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+    command: >
+      bash -c "apt-get update && 
+              apt-get install -y gcc python3-dev && 
+              pip install -r requirements.txt &&
+              tail -f /dev/null"  # Keep container running
+    networks:
+      - ml-network
+
+networks:
+  ml-network:
+    driver: bridge

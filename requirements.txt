@@ -1,0 +1,11 @@
+# Core libraries
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.2.2
+matplotlib==3.7.1
+
+# MLFlow for experiment tracking
+mlflow==2.8.0
+
+# Git integration
+gitpython==3.1.32

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+*.egg
+*.whl
+build/
+dist/
+.eggs/
+
+# MLFlow : Normally, these are ignored, but for the guide, they will be included.
+# mlruns/
+# artifacts/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Notebooks
+.ipynb_checkpoints
+
+# Docker
+.dockerignore
+
+# Reports Normally ignored, but for the guide, they will be included.
+# reports/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/

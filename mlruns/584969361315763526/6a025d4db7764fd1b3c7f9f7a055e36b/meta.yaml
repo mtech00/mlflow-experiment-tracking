@@ -1,0 +1,15 @@
+artifact_uri: /artifacts/584969361315763526/6a025d4db7764fd1b3c7f9f7a055e36b/artifacts
+end_time: 1744284760151
+entry_point_name: ''
+experiment_id: '584969361315763526'
+lifecycle_stage: active
+run_id: 6a025d4db7764fd1b3c7f9f7a055e36b
+run_name: random_forest_squared
+run_uuid: 6a025d4db7764fd1b3c7f9f7a055e36b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744284759550
+status: 3
+tags: []
+user_id: root

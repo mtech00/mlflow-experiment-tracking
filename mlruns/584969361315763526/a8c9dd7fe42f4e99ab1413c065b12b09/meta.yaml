@@ -1,0 +1,15 @@
+artifact_uri: /artifacts/584969361315763526/a8c9dd7fe42f4e99ab1413c065b12b09/artifacts
+end_time: 1744284765013
+entry_point_name: ''
+experiment_id: '584969361315763526'
+lifecycle_stage: active
+run_id: a8c9dd7fe42f4e99ab1413c065b12b09
+run_name: logistic_regression_basic_final
+run_uuid: a8c9dd7fe42f4e99ab1413c065b12b09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744284762476
+status: 3
+tags: []
+user_id: root
