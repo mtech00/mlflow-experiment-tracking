@@ -565,28 +565,7 @@ This project demonstrates a comprehensive implementation of MLFlow for experimen
 
 MLflow makes it simple to deploy trained models as REST APIs. Here are the main ways to serve your models:
 
-```bash
-# Local serving with MLflow CLI
-mlflow models serve -m "models:/iris_classification_best_model/production" -p 5000
 
-# With signature enforcement enabled
-mlflow models serve -m "models:/iris_classification_best_model/production" --enable-mlserver -p 5000
-
-# Deploy as a Docker container
-mlflow models build-docker -m "models:/iris_classification_best_model/production" -n "iris-classifier"
-docker run -p 5000:8080 iris-classifier
-
-```
-
-Once deployed, you can make prediction requests:
-
-```bash
-curl -X POST http://localhost:5000/invocations \
-  -H "Content-Type:application/json" \
-  -d '{"columns":["sepal_length","sepal_width","petal_length","petal_width"], 
-       "data":[[5.1, 3.5, 1.4, 0.2]]}'
-
-```
 
 MLflow serving supports various deployment patterns including batch inference, real-time predictions, and A/B testing through model aliases.
 
